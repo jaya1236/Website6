@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 39, 39, 0.7), rgb(0,0,0,0.7)), url(stove\ image.png);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.icon{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+.logo{
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    cursor: pointer;
+}
+.nav{
+    width: 100vw;
+}
+.nav ul{
+    height: 50px;
+   list-style: none;   /*remove bullets*/
+   margin-left: 235px;
+   margin-right: 20px;
+    float: left;     /* automatically  the search bar comes right side to the list elements*/
+}
+.nav ul li{
+    /*flex and block both are same.it means it will arrange the list elements in vertical order.we can use lnline or inline block for horizontal arrangemnt.
+    if we use block or flex we also use float= left property to arrange in horizontal. but use like ths */
+    display: block;
+    float: left;     /* automatically the elements come side by side */  
+    margin-top: 22px;
+    margin-left: 24px;     /* the gap is applied to the left of element*/
+}
+.nav ul li a {
+    text-decoration: none;   /* remove underlines*/
+    color: aliceblue;
+    font-size: 19px;
+    transition: 1s ease;
+}
+.nav ul li a:hover {
+    color: #f7f301;
+}
+.search {
+    float: right;  /* the search button will goes completely right*/
+    margin: 16px 25px 0 0;
+}
+.search input {
+    /* to remove the gap betwwn button and input search, we use float=left*/
+    float: left;
+    height: 22px;
+    width: 200px;
+    /* to make the search bar more look, use background= transperant*/
+    background: transparent;
+    color: azure;
+    border: 1px solid #f7f301;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 4px;
+    font-size: 16px;
+}
+/*when we click the input bar, the bar makes the effect of zoom and the border turns into white
+to remove the focus we use focus = none*/
+.search input:focus {
+    outline: none;
+}
+.search button {
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 80px;
+    height: 32px;
+    border: none;
+    background-color: #f7f301;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /*when we put the cursor on the search button , the cursor has to change as a hand.*/
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+.search button:hover {
+    background-color: black;
+    color: cornsilk;
+}
+.content {
+    color: blanchedalmond;
+    /*the content h1 is on the top header part. because of having float property on it. so remove the float*/
+    clear: both;
+    /*by appliing clear, the margin property didnt work. so use padding*/
+    /*border: 5px solid red;*/
+    width: 60vw;
+    padding-top: 150px;
+    padding-left: 20px;
+    float: left;       /*why this step is , if the content is left, the form will come at the left*/
+}
+.content h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 95px;
+    font-size: 50px;
+    font-weight: 60;
+    letter-spacing: 2px;
+}
+.content h1 span {
+    color: #f7f301;
+    font-size: 52px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.content p {
+    font-size: 16px;
+    padding: 20px 5px 5px 5px;
+    line-height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1.3px;
+    float: ;
+}
+.btn {
+    width: 120px;
+    height: 35px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f7f301;
+    border: none;
+    border-radius: 9px;
+    
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.btn:hover {
+    background-color: black;
+    color: cornsilk;
+}
+.butn {
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.form {
+    color: #f7f301;
+    background: linear-gradient(to top, rgba(17, 17, 17, 0.7), rgb(0,0,0,0.7));
+    width: 300px;
+    height: 400px;
+    float: right;   /* this will make the form to right side*/
+    margin-top: 160px;
+    margin-right: 25px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgb(206, 80, 80);
+
+
+}
+.form h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 44px;
+    color: black;
+    line-height: 44px;
+    background-color: #f7f301;
+    border-radius: 10px;
+    margin-bottom: 10px;
+   
+}
+.form input {
+    width: 100%;
+    border-radius: ;
+    height: 40px;
+    margin-top: 14px;
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #f7f301;
+    font-size: 15px;
+    
+}
+/*input[type=checkbox] {
+    width: 20px;
+    float: unset;*/
+
+
+.libtn {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.link {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+.link a {
+    text-decoration: none;
+    color: orangered;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+
+}
+.liw {
+    margin-top: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* now we have to take the socialmedia icons. for that we have som efree websites called "ionic" */
+.icons ion-icon {
+    font-size: 36px;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    color: aliceblue;
+
+}
+.icons ion-icon:first-child {
+    margin-left: 0px;
+}
+.icons ion-icon :hover {
+    color: black;
+}
+
+
+/*Responsive Css*/
+@media screen and (max-width: 1200px) {
+    /* normal screen*/
+    .logo {
+        font-size: 3.5vw;
+    }
+    .nav ul li a {
+        font-size: 1.7vw;
+    }
+    .content h1 {
+        
+
+    }
+    
+}
